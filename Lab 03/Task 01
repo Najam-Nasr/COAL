@@ -1,0 +1,22 @@
+include irvine32.inc
+
+.data
+
+snum BYTE -100
+unum BYTE 200
+holder BYTE ?
+
+.code
+main proc
+
+movsx eax, snum
+call writeint
+call crlf
+
+movzx eax, unum
+call writeint
+call crlf
+
+exit
+main endp
+end main
