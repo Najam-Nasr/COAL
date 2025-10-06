@@ -1,0 +1,15 @@
+include irvine32.inc
+
+.data
+
+marks BYTE 8 DUP(5)
+num2 WORD 5 DUP(?)
+
+.code
+main proc
+
+call crlf
+
+exit
+main endp
+end main
