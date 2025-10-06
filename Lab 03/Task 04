@@ -1,0 +1,32 @@
+include irvine32.inc
+
+.data
+
+result BYTE ?
+
+.code
+main proc
+
+mov ebx, 90
+mov eax, ebx
+call writedec
+call crlf
+
+mov ebx, 5Ah
+mov eax, ebx
+call writedec
+call crlf
+
+mov ebx, 01011010b
+mov eax, ebx
+call writedec
+call crlf
+
+mov ebx, 'B'
+mov eax, ebx
+call writedec
+call crlf
+
+exit
+main endp
+end main
