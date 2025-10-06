@@ -1,0 +1,17 @@
+include irvine32.inc
+
+.data
+
+message BYTE "Hello World",0
+
+.code
+main proc
+
+mov edx, offset message
+
+call writestring
+call crlf
+
+exit
+main endp
+end main
