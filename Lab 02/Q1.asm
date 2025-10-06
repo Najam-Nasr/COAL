@@ -1,5 +1,3 @@
-;NAJAM NASR 24k-0754
-
 include irvine32.inc
 
 .data
