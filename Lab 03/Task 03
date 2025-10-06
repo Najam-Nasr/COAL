@@ -1,0 +1,20 @@
+include irvine32.inc
+
+.data
+
+num1 DWORD 500
+num2 DWORD 200
+
+.code
+main proc
+
+mov eax, num1
+mov ebx, num2
+add eax, ebx
+
+call writeint
+call crlf
+
+exit
+main endp
+end main
